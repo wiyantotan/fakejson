@@ -86,6 +86,10 @@
       }
     }
   },
+  "testjson": {
+    "page": 1,
+    "name": "wt"
+  },
   "test": [{"page": 1, "name": "wt"}],
   "inventoryData": [
     {"page": 1, "dataPerPage": 10, "totalData": 23, "totalPage": 3, "success": true, "payload": {
