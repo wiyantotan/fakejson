@@ -1,4 +1,8 @@
 {
+  "gender": {
+    "Male": {"code": "Male", "name": "Male"},
+    "Female": {"code": "Female", "name": "Female"}
+  },
   "posts": [
     {
       "id": 1,
