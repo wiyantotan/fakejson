@@ -1,31 +1,35 @@
 {
   "master_static": {
-    "gender": {
-      "Male": {"masterCode": "Male", "masterName": "Male"},
-      "Female": {"masterCode": "Female", "masterName": "Female"}
-    },
-    "posFunc": {
-      "A01": {
-        "funCode": "A01", "funTitle": "Change app settings", "funDesc": "User can change app settings"
+    "success": true,
+    "message": "Success Get Data",
+    "payload": {
+      "gender": {
+        "Male": {"masterCode": "Male", "masterName": "Male"},
+        "Female": {"masterCode": "Female", "masterName": "Female"}
       },
-      "A02": {
-        "funCode": "A02", "funTitle": "Delete open orders", "funDesc": "User can delete open(held) order"
+      "posFunc": {
+        "A01": {
+          "funCode": "A01", "funTitle": "Change app settings", "funDesc": "User can change app settings"
+        },
+        "A02": {
+          "funCode": "A02", "funTitle": "Delete open orders", "funDesc": "User can delete open(held) order"
+        },
+        "A03": {
+          "funCode": "A03", "funTitle": "Open Cash Drawer", "funDesc": "User open cash drawer"
+        }
       },
-      "A03": {
-        "funCode": "A03", "funTitle": "Open Cash Drawer", "funDesc": "User open cash drawer"
+      "menuBoPos": {
+        "store": {"menuCode": "store", "label": "Store", "href": "/store", "icon": ["fas","store-alt"], "orderBy": 2},
+        "dashboard": {"menuCode": "dashboard", "label": "Dashboard", "href": "/dashboard", "icon": ["fas","tachometer-alt"], "orderBy": 0},
+        "productManagement": {"menuCode": "productManagement", "label": "Product Management", "href": null, "icon": ["fas", "archive"], "orderBy": 1, "menus": {
+          "items": {"menuCode": "items", "label": "Items", "href": null, "icon": null, "orderBy": 1, "menus": {
+            "ingredients": {"menuCode": "ingredients", "label": "Ingredients", "href": "/ingredients", "icon": null, "orderBy": 1},
+            "product": {"menuCode": "product", "label": "Product", "href": "/product", "icon": null, "orderBy": 0}
+          }},
+          "category": {"menuCode": "category", "label": "Category", "href": "/category", "icon": null, "orderBy": 0},
+          "addon": {"menuCode": "addon", "label": "Add On", "href": "/addon", "icon": null, "orderBy": 2}
+        }}
       }
-    },
-    "menuBoPos": {
-      "store": {"menuCode": "store", "label": "Store", "href": "/store", "icon": ["fas","store-alt"], "orderBy": 2},
-      "dashboard": {"menuCode": "dashboard", "label": "Dashboard", "href": "/dashboard", "icon": ["fas","tachometer-alt"], "orderBy": 0},
-      "productManagement": {"menuCode": "productManagement", "label": "Product Management", "href": null, "icon": ["fas", "archive"], "orderBy": 1, "menus": {
-        "items": {"menuCode": "items", "label": "Items", "href": null, "icon": null, "orderBy": 1, "menus": {
-          "ingredients": {"menuCode": "ingredients", "label": "Ingredients", "href": "/ingredients", "icon": null, "orderBy": 1},
-          "product": {"menuCode": "product", "label": "Product", "href": "/product", "icon": null, "orderBy": 0}
-        }},
-        "category": {"menuCode": "category", "label": "Category", "href": "/category", "icon": null, "orderBy": 0},
-        "addon": {"menuCode": "addon", "label": "Add On", "href": "/addon", "icon": null, "orderBy": 2}
-      }}
     }
   },
   "users": {
