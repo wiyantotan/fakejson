@@ -1,15 +1,77 @@
 {
-  "gender": {
-    "Male": {"code": "Male", "name": "Male"},
-    "Female": {"code": "Female", "name": "Female"}
-  },
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
+  "master_static": {
+    "gender": {
+      "Male": {"masterCode": "Male", "masterName": "Male"},
+      "Female": {"masterCode": "Female", "masterName": "Female"}
+    },
+    "posFunc": {
+      "A01": {
+        "funCode": "A01", "funTitle": "Change app settings", "funDesc": "User can change app settings"
+      },
+      "A02": {
+        "funCode": "A02", "funTitle": "Delete open orders", "funDesc": "User can delete open(held) order"
+      },
+      "A03": {
+        "funCode": "A03", "funTitle": "Open Cash Drawer", "funDesc": "User open cash drawer"
+      }
+    },
+    "menuBoPos": {
+      "store": {"menuCode": "store", "label": "Store", "href": "/store", "icon": ["fas","store-alt"], "orderBy": 2},
+      "dashboard": {"menuCode": "dashboard", "label": "Dashboard", "href": "/dashboard", "icon": ["fas","tachometer-alt"], "orderBy": 0},
+      "productManagement": {"menuCode": "productManagement", "label": "Product Management", "href": null, "icon": ["fas", "archive"], "orderBy": 1, "menus": {
+        "items": {"menuCode": "items", "label": "Items", "href": null, "icon": null, "orderBy": 1, "menus": {
+          "ingredients": {"menuCode": "ingredients", "label": "Ingredients", "href": "/ingredients", "icon": null, "orderBy": 1},
+          "product": {"menuCode": "product", "label": "Product", "href": "/product", "icon": null, "orderBy": 0}
+        }},
+        "category": {"menuCode": "category", "label": "Category", "href": "/category", "icon": null, "orderBy": 0},
+        "addon": {"menuCode": "addon", "label": "Add On", "href": "/addon", "icon": null, "orderBy": 2}
+      }}
     }
-  ],
-  "profile": {
-    "name": "typicode"
+  },
+  "users": {
+    "5c587eaf-dd61-4f1b-a911-fb1a05f4c946": {"userId": 1, "userGuid": "5c587eaf-dd61-4f1b-a911-fb1a05f4c946", "firstName": "Wiyanto", "lastName": "Tan", "email": "wiyantotan@gmail.com", "username": "wiyantotan", "isActive": true, "pin": "123456", "role": "8bdf1f4b-d103-49d7-9a16-1800da87e443"},
+    "b3063e4a-2b43-4541-86a1-2a1c8fcef2a2": {"userId": 2, "userGuid": "b3063e4a-2b43-4541-86a1-2a1c8fcef2a2", "firstName": "Elliot", "lastName": "", "email": "", "username": "elliot", "isActive": true, "pin": "999888", "role": "8edb3460-6835-46e7-8911-f2091906f309"},
+    "461225fb-bca5-44d1-b1d6-3c33f5d30b86": {"userId": 3, "userGuid": "461225fb-bca5-44d1-b1d6-3c33f5d30b86", "firstName": "Ribekah", "lastName": "", "email": "", "username": "ribekah", "isActive": true, "pin": "111222", "role": "00363d4f-a0ae-4648-9454-d587ef7a4952"}
+  },
+  "role": {
+    "8bdf1f4b-d103-49d7-9a16-1800da87e443": {
+      "roleId": 1,
+      "roleGuid": "8bdf1f4b-d103-49d7-9a16-1800da87e443",
+      "roleName": "Admin",
+      "posAccess": true,
+      "posFunc": {
+        "A01": {"funCode": "A01", "accessLevel": "FULL"},
+        "A03": {"funCode": "A03", "accessLevel": "FULL"}
+      },
+      "menuBoPos": {
+        "dashboard": {"menuCode": "dashboard", "accessLevel": "DELETE"},
+        "store": {"menuCode": "store", "accessLevel": "DELETE"}
+      }
+    },
+    "8edb3460-6835-46e7-8911-f2091906f309": {
+      "roleId": 2,
+      "roleGuid": "8edb3460-6835-46e7-8911-f2091906f309",
+      "roleName": "Manager",
+      "posAccess": true,
+      "posFunc": {
+        "A01": {"funCode": "A01", "accessLevel": "ASKPIN"},
+        "A03": {"funCode": "A03", "accessLevel": "FULL"}
+      },
+      "menuBoPos": {
+        "dashboard": {"menuCode": "dashboard", "accessLevel": "DELETE"},
+        "store": {"menuCode": "store", "accessLevel": "DELETE"}
+      }
+    },
+    "00363d4f-a0ae-4648-9454-d587ef7a4952": {
+      "roleId": 3,
+      "roleGuid": "00363d4f-a0ae-4648-9454-d587ef7a4952",
+      "roleName": "Staff",
+      "posAccess": true,
+      "posFunc": {
+        "A01": {"funCode": "A01", "accessLevel": "ASKPIN"},
+        "A03": {"funCode": "A03", "accessLevel": "ASKPIN"}
+      },
+      "menuBoPos": {}
+    }
   }
 }
