@@ -86,6 +86,7 @@
       }
     }
   },
+  "test": [{"page": 1, "name": "wt"}],
   "inventoryData": [
     {"page": 1, "dataPerPage": 10, "totalData": 23, "totalPage": 3, "success": true, "payload": {
       "n2po31e": { "inventory_id": "n2po31e", "bin": "2132133", "category": "1", "cost": "20000", "cost_center": "Extrashoot", "location": "3", "low_stock_alert": "100", "name": "Gula", "purchase_qty": "12000", "purchase_unit": "Miligrams", "sales_qty": 12000, "sales_unit": "Miligrams", "serial": "213213","sku": "213" },
