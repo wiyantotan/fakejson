@@ -7,12 +7,6 @@
         "Male": {"masterCode": "Male", "masterName": "Male"},
         "Female": {"masterCode": "Female", "masterName": "Female"}
       },
-      "timezone": {
-        "+07:00": {"tzOffset": "+07:00", "tzName": "(+07:00) Bangkok, Hanoi, Jakarta"},
-        "+08:00": {"tzOffset": "+08:00", "tzName": "(+08:00) Kuala Lumpur, Singapore"},
-        "+12:00": {"tzOffset": "+12:00", "tzName": "(+12:00) Fiji"},
-        "+04:30": {"tzOffset": "+04:30", "tzName": "(+04:30) Kabul"}
-      },
       "posFunc": {
         "A01": {
           "funCode": "A01", "funTitle": "Change app settings", "funDesc": "User can change app settings"
