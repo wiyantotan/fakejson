@@ -3,10 +3,6 @@
     "success": true,
     "message": "Success Get Data",
     "payload": {
-      "gender": {
-        "Male": {"masterCode": "Male", "masterName": "Male"},
-        "Female": {"masterCode": "Female", "masterName": "Female"}
-      },
       "posFunc": {
         "A01": {
           "funCode": "A01", "funTitle": "Change app settings", "funDesc": "User can change app settings"
